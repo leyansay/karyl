@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Feed Demo</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navigation -->
+<header class="navbar">
+  <div class="left-nav">
+    <span style="font-weight:bold;"> facebook</span>
+    <input type="text" class="search" placeholder="Search here...">
+  </div>
+
+  <div class="center-nav">
+    <a href="newsfeed.html" class="nav-btn"><i class="ri-home-5-line"></i></a>
+    <a href="friends.html" class="nav-btn"><i class="ri-group-line"></i></a>
+    <a href="videos.html" class="nav-btn"><i class="ri-tv-line"></i></a>
+    <a href="marketplace.html" class="nav-btn active"><i class="ri-shopping-bag-3-line"></i></a>
+  </div>
+
+  <div class="nav-icons">
+  <button class="icon-btn"><i class="ri-mail-fill" style="color: #666;"></i></button>
+  <button class="icon-btn"><i class="ri-notification-3-fill" style="color: #666;"></i></button>
+  <button class="icon-btn"><i class="ri-logout-box-r-line" style="color: #666;"></i></button>
+</div>
+
+</header>
+
+<div class="container">
+  <!-- Left Sidebar -->
+  <aside class="sidebar-left">
+    <ul>
+      <li><a href="profile.html"><span>👤</span> Profile</a></li>
+      <li><a href="#"><span>🔖</span> Saved</a></li>
+      <li><a href="#"><span>🕓</span> Memories</a></li>
+      <li><a href="#"><span>📹</span> Videos</a></li>
+    </ul>
+  </aside>
+
+  <!-- News Feed -->
+  <main class="feed">
+    <!-- Post Composer -->
+    <div class="create-post">
+  <textarea id="postInput" placeholder="What's on your mind?" rows="4"></textarea>
+  <button onclick="createPost()">Post</button>
+</div>
+
+    <!-- Post List -->
+    <div id="post-list">
+      <div class="post">
+        <div class="post-header">
+          <strong>Karel</strong>
+          <span>• 2h ago</span>
+        </div>
+        <div class="post-content">
+          Will graduate soon!
+        </div>
+        <div class="post-actions">
+          <div class="like-wrapper">
+            <button id="like-btn">👍 Like</button>
+          </div>
+          <button>💬 Comment</button>
+          <button>🔁 Share</button>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+    <div class="post-header">
+      <strong>Mikay</strong>
+      <span>• 4h ago</span>
+    </div>
+    <div class="post-content">
+      Loving the new features in this app! Can't wait to explore more.
+    </div>
+    <div class="post-actions">
+      <div class="like-wrapper">
+        <button class="like-btn">😮 Wow</button>
+      </div>
+      <button>💬 Comment</button>
+      <button>🔁 Share</button>
+    </div>
+  </div>
+  <div class="post">
+    <div class="post-header">
+      <strong>User 2</strong>
+      <span>• 4h ago</span>
+    </div>
+    <div class="post-content">
+      Loving the new features in this app! Can't wait to explore more.
+    </div>
+    <div class="post-actions">
+      <div class="like-wrapper">
+        <button class="like-btn">😡 Wow</button>
+      </div>
+      <button>💬 Comment</button>
+      <button>🔁 Share</button>
+    </div>
+  </div>
+  </main>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

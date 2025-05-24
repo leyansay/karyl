@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/css/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  </head>
+<body>
+
+
+<!-- Top Navigation -->
+<header class="navbar">
+  <div class="left-nav">
+    <span style="font-weight:bold;">facebook</span>
+    <input type="text" class="search" placeholder="Search here...">
+  </div>
+
+ <div class="center-nav">
+    <button class="nav-btn"  onclick="location.href='newsfeed.html'">
+      <i class="ri-home-5-fill" style="color: #666;"></i></button>
+    <button class="nav-btn"><i class="ri-group-fill" style="color: #666;"></i></button>
+    <button class="nav-btn"><i class="ri-movie-2-fill" style="color: #666;"></i></button>
+    <button class="nav-btn" onclick="location.href='marketplace.html'">
+  <i class="ri-shopping-cart-2-fill" style="color: #666;"></i>
+</button>
+  </div>
+
+
+
+ <div class="nav-icons">
+  <button class="icon-btn"><i class="ri-mail-fill" style="color: #666;"></i></button>
+  <button class="icon-btn"><i class="ri-notification-3-fill" style="color: #666;"></i></button>
+  <button class="icon-btn"><i class="ri-logout-box-r-fill" style="color: #666;"></i></button>
+</div>
+
+</header>
+<section class="profile-section">
+  <img src="/image/witwiw.jpg" alt="Cover Photo" class="cover-photo" />
+
+  <div class="profile-info">
+    <img src="/image/karel.jpg" alt="Profile Picture" class="profile-picture" />
+    <h1 class="profile-name">Karyll Queen Reyes</h1>
+    <button class="edit-profile-btn">Edit Profile</button>
+
+    <nav class="profile-tabs">
+      <a href="newsfeed.html" class="active">Posts</a>
+      <a href="about.html">About</a>
+      <a href="friends.html">Friends</a>
+      <a href="photos.html">Photos</a>
+      <a href="#more">More</a>
+    </nav>
+  </div>
+
+  <div class="profile-content-wrapper">
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+      <!-- Intro Section -->
+      <section class="intro">
+        <h3>Intro</h3>
+        <p>BSIT Student • Loves coffee ☕ and coding 💻</p>
+        <p><i class="fas fa-briefcase"></i> Works at Computer Society</p>
+        <p><i class="fas fa-graduation-cap"></i> Studied at Aces Tagum College Inc.</p>
+        <p><i class="fas fa-home"></i> Lives in Tagum City</p>
+      </section>
+
+      <!-- Friends Section -->
+      <section class="friends">
+        <h3>Friends</h3>
+        <div class="friends-grid">
+          <div class="friend">
+            <img src="/image/prof.jpg" alt="Kim" />
+            <p>Kim</p>
+          </div>
+          <div class="friend">
+            <img src="/image/prof.jpg" alt="Josh" />
+            <p>Josh</p>
+          </div>
+          <div class="friend">
+            <img src="/image/prof.jpg" alt="Ella" />
+            <p>Ella</p>
+          </div>
+        </div>
+        <a href="#" class="see-all">See All Friends</a>
+      </section>
+    </aside>
+
+    <!-- Main Feed -->
+ <!-- Main Feed -->
+<div class="main-feed">
+  <!-- Post Composer -->
+  <div class="create-post">
+    <textarea placeholder="What's on your mind?"></textarea>
+    <button onclick="createPost()">Post</button>
+  </div>
+
+  <!-- Post List container -->
+  <div id="post-list">
+    <!-- Static Post -->
+    <article class="post">
+      <header class="post-header">
+        <div class="user-info">
+          <strong>Marj</strong>
+          <time datetime="2025-05-24T12:00">• 4h ago</time>
+        </div>
+      </header>
+      <p class="post-content">Pwede ka maka add post sir.</p>
+      <footer class="post-actions">
+        <button class="reaction-btn">😡 Wow</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </footer>
+    </article>
+  </div>
+</div>
+</div>
+</section>
+
+
+<script src="/js/script.js"></script>
+
+    
+</body>
+</html>
